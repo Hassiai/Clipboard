@@ -1,0 +1,298 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --white: #fff;
+    --p-color: hsl(201, 11%, 66%);
+    --heading-color: hsl(210, 10%, 33%);
+}
+
+button {
+    --ios-bg-color: hsl(171, 66%, 44%);
+    --mac-bg-color: hsl(233, 100%, 69%);
+    --ios-box-shadow: 0 .5em .9em hsla(171, 66%, 44%, 0.5);
+    --mac-box-shadow: 0 .2em .4em hsla(233, 100%, 69%, 0.5);
+    --ios-border: .3em solid hsl(171, 66%, 44%);
+    --mac-border: .3em solid hsl(233, 100%, 69%);
+}
+
+
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.125rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    padding: 3em 0;
+
+}
+
+.header__image {
+    display: grid;
+    place-items: center;
+    margin: 3em 0;
+
+}
+
+.clipboard__about {
+    margin-top: 2em;
+}
+
+
+p {
+    color: var(--p-color);
+    margin: 1.5em 0;
+    line-height: 1.7;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--heading-color);
+    text-align: center;
+    margin: 1em 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 4em 0;
+
+}
+
+.supercharge__services {
+    margin-top: 5em;
+}
+
+.supercharge__icon {
+    display: grid;
+    place-items: center;
+    margin-top: 1em;
+}
+
+button {
+    padding: 1.5em 0;
+    width: 100%;
+    margin: 1em 0;
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 3em;
+    cursor: pointer;
+}
+
+.ios--button {
+    background-color: var(--ios-bg-color);
+    box-shadow: var(--ios-box-shadow);
+    border: var(--ios-border);
+}
+
+.mac--button {
+    background-color: var(--mac-bg-color);
+    box-shadow: var(--mac-box-shadow);
+    border: var(--mac-border)
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.sponsor__logo {
+    padding: 2em 0;
+    display: grid;
+    place-items: center;
+
+}
+
+footer {
+    --footer-bg-color: hsl(220, 18%, 97%);
+    --footer-color: hsl(210, 10%, 33%);
+    --footer-hover-color: hsl(171, 66%, 44%);
+
+    padding: 3em 0;
+    background-color: var(--footer-bg-color);
+
+    color: var(--footer-color);
+
+}
+
+.footer__logo {
+    display: grid;
+    place-items: center;
+    margin-bottom: 2em;
+}
+
+.flogo {
+    width: 3.5rem;
+
+
+}
+
+.summary {
+    text-align: center;
+
+}
+
+li {
+    list-style: none;
+    margin-top: 1em;
+
+}
+
+li a {
+    text-decoration: none;
+    color: var(--footer-color);
+}
+
+.enquiries,
+.policy,
+.install {
+    margin-bottom: 1em;
+
+}
+
+.social__icons {
+    margin-top: 1em;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+li a:hover {
+    color: var(--footer-hover-color);
+}
+
+@media (min-width: 1000px) {
+
+    header {
+        background-image: url(./images/bg-header-desktop.png);
+
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .clipboard__about {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    button {
+        width: 35%;
+    }
+
+
+    .clipboard__availability {
+        width: 55%;
+        margin: 0 auto;
+
+    }
+
+    .track {
+        width: 58%;
+        margin: 0 auto;
+        margin-bottom: 3em;
+    }
+
+    .services__row {
+        display: flex;
+    }
+
+    aside {
+        width: 32%;
+
+    }
+
+    .col h3,
+    .col p {
+        text-align: left;
+    }
+
+    .com {
+        margin-left: -8em;
+    }
+
+    .clipboard__access {
+        display: grid;
+        place-items: center;
+
+    }
+
+    .access__about {
+        width: 60%;
+        margin-bottom: 5em;
+    }
+
+    .sponsors,
+    .supercharge__services {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer {
+        padding: 1.5em 0;
+    }
+
+    .footer__row {
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    .footer__logo {
+        width: 20%;
+    }
+
+    .summary {
+        width: 45%;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .social__icons {
+        margin-left: auto;
+    }
+
+
+}
